@@ -62,11 +62,7 @@
 <a href="mailto:rawanisuraj1919@gmail.com">
   <img src="https://img.shields.io/badge/Email-0A101F?style=for-the-badge&logo=gmail&logoColor=10B981&labelColor=0A101F" alt="Email" />
 </a>
-&nbsp;&nbsp;
-<a href="tel:+917061205601">
-  <img src="https://img.shields.io/badge/+91_7061205601-0A101F?style=for-the-badge&logo=whatsapp&logoColor=10B981&labelColor=0A101F" alt="Phone" />
-</a>
-<!-- Facebook — uncomment and add URL when ready:
+<!-- Facebook — add later:
 &nbsp;&nbsp;
 <a href="TODO_FACEBOOK_URL">
   <img src="https://img.shields.io/badge/Facebook-0A101F?style=for-the-badge&logo=facebook&logoColor=22D3EE&labelColor=0A101F" alt="Facebook" />
