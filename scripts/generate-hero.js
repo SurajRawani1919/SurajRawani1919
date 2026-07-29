@@ -133,6 +133,10 @@ function make(theme) {
       <image xlink:href="${photoUri}" x="44" y="92" width="384" height="476" preserveAspectRatio="xMidYMid slice" mask="url(#photoReveal)"/>
     </g>
     ${brackets}
+    <!-- Name + designation on photo (restored) -->
+    <rect x="44" y="488" width="384" height="72" fill="${dark ? "rgba(11,18,32,0.82)" : "rgba(255,255,255,0.88)"}"/>
+    <text x="236" y="520" text-anchor="middle" font-size="18" font-weight="700" fill="${c.textStrong}">Suraj Kumar Rawani</text>
+    <text x="236" y="544" text-anchor="middle" font-size="13" fill="${c.accent}">AI/ML Engineer</text>
 
     <!-- RIGHT: SYSTEM.INFO -->
     <text x="470" y="74" font-size="13" letter-spacing="2" fill="${c.accent}" filter="url(#txtGlow)">SYSTEM.INFO</text>

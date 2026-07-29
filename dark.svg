@@ -128,6 +128,10 @@
     <path d="M36 548 V576 H64" fill="none" stroke="#22D3EE" stroke-width="2.5"/>
     <path d="M408 576 H436 V548" fill="none" stroke="#22D3EE" stroke-width="2.5"/>
   
+    <!-- Name + designation on photo (restored) -->
+    <rect x="44" y="488" width="384" height="72" fill="rgba(11,18,32,0.82)"/>
+    <text x="236" y="520" text-anchor="middle" font-size="18" font-weight="700" fill="#F8FAFC">Suraj Kumar Rawani</text>
+    <text x="236" y="544" text-anchor="middle" font-size="13" fill="#22D3EE">AI/ML Engineer</text>
 
     <!-- RIGHT: SYSTEM.INFO -->
     <text x="470" y="74" font-size="13" letter-spacing="2" fill="#22D3EE" filter="url(#txtGlow)">SYSTEM.INFO</text>
