@@ -1,0 +1,36 @@
+name: Refresh Streak Stats
+
+on:
+  schedule:
+    - cron: "0 */12 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/streak.yml"
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Download streak SVGs
+        run: |
+          curl -fsSL --retry 5 --retry-delay 5 \
+            "https://streak-stats.demolab.com/?user=SurajRawani1919&hide_border=true&background=FFFFFF&stroke=0891B2&ring=7C3AED&fire=059669&currStreakLabel=0891B2&sideLabels=475569&currStreakNum=0F172A&sideNums=0F172A&dates=94A3B8&titleColor=0891B2&card_width=1180" \
+            -o streak-light.svg
+          curl -fsSL --retry 5 --retry-delay 5 \
+            "https://streak-stats.demolab.com/?user=SurajRawani1919&hide_border=true&background=0A101F&stroke=22D3EE&ring=A78BFA&fire=10B981&currStreakLabel=22D3EE&sideLabels=94A3B8&currStreakNum=F8FAFC&sideNums=F8FAFC&dates=64748B&titleColor=22D3EE&card_width=1180" \
+            -o streak-dark.svg
+          head -c 200 streak-light.svg | grep -q "<svg"
+
+      - name: Commit updated streak cards
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add streak-light.svg streak-dark.svg
+          git diff --staged --quiet || git commit -m "chore: refresh streak stats cards"
+          git push
