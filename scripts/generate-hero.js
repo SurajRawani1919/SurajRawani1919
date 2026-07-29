@@ -46,13 +46,18 @@ function make(theme) {
     ["Grid.Instagram", "@suraj_singh1919"],
   ];
 
+  // Fill the full SYSTEM.INFO column (~accent bar width: 660px ≈ 84 monospace chars at 13px)
+  const LINE_CHARS = 84;
+
   function row(y, label, value) {
-    const dots = ".".repeat(Math.max(3, 52 - label.length - String(value).length));
+    const left = `${label} `;
+    const right = ` ${value}`;
+    const dots = ".".repeat(Math.max(3, LINE_CHARS - left.length - right.length));
     return (
       `<text x="460" y="${y}" font-size="13" xml:space="preserve">` +
-      `<tspan fill="${c.title}">${label} </tspan>` +
+      `<tspan fill="${c.title}">${left}</tspan>` +
       `<tspan fill="${c.dots}">${dots}</tspan>` +
-      `<tspan fill="${c.text}" font-weight="600"> ${value}</tspan></text>`
+      `<tspan fill="${c.text}" font-weight="600">${right}</tspan></text>`
     );
   }
 
@@ -62,7 +67,9 @@ function make(theme) {
     body += row(y, l, v) + "\n";
     y += 22;
   }
-  body += `<text x="460" y="${y}" font-size="12" fill="${c.soft}">- Contact ---------------------------------------------------------------------</text>\n`;
+  const contactLabel = "- Contact ";
+  const contactDashes = "-".repeat(Math.max(3, LINE_CHARS - contactLabel.length));
+  body += `<text x="460" y="${y}" font-size="12" fill="${c.soft}" xml:space="preserve">${contactLabel}${contactDashes}</text>\n`;
   y += 24;
   for (const [l, v] of contacts) {
     body += row(y, l, v) + "\n";
