@@ -47,6 +47,11 @@
 <br/>
 <br/>
 
+<!-- ===== PROJECTS LIST ===== -->
+<div align="center">
+  <img width="100%" src="https://raw.githubusercontent.com/SurajRawani1919/SurajRawani1919/main/projects.svg" alt="Projects" />
+</div>
+
 <!-- ===== SOCIAL BADGES ===== -->
 <br/>
 <div align="center">

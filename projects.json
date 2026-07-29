@@ -1,0 +1,68 @@
+[
+  {
+    "name": "RAG Gemini App_",
+    "repo": "SurajRawani1919/RAG-Retrieval-Augmented-Generation-with-Gemini-Streamlit",
+    "initial": "RG",
+    "color": "#22D3EE",
+    "description": "RAG chatbot with Gemini, embeddings, and Streamlit UI",
+    "tags": ["Python", "RAG", "Streamlit", "Gemini"],
+    "languages": [["Python", 78], ["Jupyter Notebook", 14], ["HTML", 8]],
+    "stars": 0,
+    "updated": "Aug 2025"
+  },
+  {
+    "name": "Agentic HR_",
+    "repo": "SurajRawani1919/Agentic-HR-Chatbot",
+    "initial": "HR",
+    "color": "#A78BFA",
+    "description": "Agentic HR chatbot for employee queries and workflows",
+    "tags": ["Python", "LLM", "Agents"],
+    "languages": [["Python", 100]],
+    "stars": 0,
+    "updated": "Sep 2025"
+  },
+  {
+    "name": "Doc Analyzer_",
+    "repo": "SurajRawani1919/AI-Powered-Document-Analyzer",
+    "initial": "DA",
+    "color": "#10B981",
+    "description": "AI document analyzer for extraction and insights",
+    "tags": ["Python", "NLP", "LLM"],
+    "languages": [["Python", 86], ["Markdown", 14]],
+    "stars": 0,
+    "updated": "Sep 2025"
+  },
+  {
+    "name": "Blog LLM_",
+    "repo": "SurajRawani1919/Blog-Generation-LLM-App",
+    "initial": "BL",
+    "color": "#F59E0B",
+    "description": "LLM app that generates blog content from prompts",
+    "tags": ["Python", "LLM", "NLP"],
+    "languages": [["Python", 92], ["HTML", 8]],
+    "stars": 0,
+    "updated": "Jul 2025"
+  },
+  {
+    "name": "RoadAI_",
+    "repo": "SurajRawani1919/RoadAI-Detection-System",
+    "initial": "RA",
+    "color": "#EF4444",
+    "description": "Computer vision system for road hazard detection",
+    "tags": ["Python", "CV", "MediaPipe"],
+    "languages": [["Python", 81], ["Jupyter Notebook", 19]],
+    "stars": 0,
+    "updated": "Nov 2025"
+  },
+  {
+    "name": "ATS Project_",
+    "repo": "SurajRawani1919/ATS-Project",
+    "initial": "ATS",
+    "color": "#38BDF8",
+    "description": "Applicant tracking insights with ML and NLP scoring",
+    "tags": ["Python", "NLP", "ML"],
+    "languages": [["Python", 100]],
+    "stars": 0,
+    "updated": "Apr 2025"
+  }
+]

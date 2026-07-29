@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" role="img" aria-label="PROJECTS.LIST">
+  <rect width="1200" height="760" fill="#070B14"/>
+  <text x="28" y="46" font-size="14" letter-spacing="2" fill="#22D3EE">PROJECTS.LIST</text>
+  <text x="188" y="46" font-size="13" fill="#64748B">./projects.sh --all</text>
+  
+  <a href="https://github.com/SurajRawani1919/RAG-Retrieval-Augmented-Generation-with-Gemini-Streamlit" target="_blank">
+    <rect x="28" y="84" width="560" height="200" rx="16" fill="#0B1220" stroke="#1E293B"/>
+    <text x="50" y="112" font-size="11" fill="#64748B">SurajRawani1919/RAG-Retrieval-Augmented-Generation-with-Gemini-Streamlit</text>
+    <text x="50" y="142" font-size="24" font-weight="700" fill="#F8FAFC">RAG Gemini App_</text>
+    <rect x="518" y="102" width="48" height="48" rx="12" fill="#22D3EE" opacity="0.18" stroke="#22D3EE"/>
+    <text x="542" y="132" text-anchor="middle" font-size="14" font-weight="700" fill="#22D3EE">RG</text>
+    <text x="50" y="170" font-size="13" fill="#94A3B8">RAG chatbot with Gemini, embeddings, and Streamlit UI</text>
+    <rect x="50" y="188" width="61.2" height="22" rx="11" fill="#1E1B4B" stroke="#4C1D95"/><text x="80.6" y="203" text-anchor="middle" font-size="11" fill="#C4B5FD">Python</text><rect x="119.2" y="188" width="52" height="22" rx="11" fill="#1E1B4B" stroke="#4C1D95"/><text x="145.2" y="203" text-anchor="middle" font-size="11" fill="#C4B5FD">RAG</text><rect x="179.2" y="188" width="82.8" height="22" rx="11" fill="#1E1B4B" stroke="#4C1D95"/><text x="220.6" y="203" text-anchor="middle" font-size="11" fill="#C4B5FD">Streamlit</text><rect x="270" y="188" width="61.2" height="22" rx="11" fill="#1E1B4B" stroke="#4C1D95"/><text x="300.6" y="203" text-anchor="middle" font-size="11" fill="#C4B5FD">Gemini</text>
+    <text x="50" y="262" font-size="12" fill="#64748B">★ 0   updated Aug 2025</text>
+    <circle cx="378" cy="199" r="4" fill="#3572A5"/><text x="390" y="202" font-size="12" fill="#94A3B8">Python 78%</text><circle cx="378" cy="217" r="4" fill="#DA5B0B"/><text x="390" y="220" font-size="12" fill="#94A3B8">Jupyter Notebook 14%</text><circle cx="378" cy="235" r="4" fill="#E34C26"/><text x="390" y="238" font-size="12" fill="#94A3B8">HTML 8%</text>
+    <circle cx="510" cy="192" r="34" fill="none" stroke="#3572A5" stroke-width="10" stroke-dasharray="166.63007434640264 46.99822609770331" stroke-dashoffset="0" transform="rotate(-90 510 192)"/><circle cx="510" cy="192" r="34" fill="none" stroke="#DA5B0B" stroke-width="10" stroke-dasharray="29.907962062174835 183.7203383819311" stroke-dashoffset="-166.63007434640264" transform="rotate(-90 510 192)"/><circle cx="510" cy="192" r="34" fill="none" stroke="#E34C26" stroke-width="10" stroke-dasharray="17.090264035528477 196.53803640857745" stroke-dashoffset="-196.53803640857748" transform="rotate(-90 510 192)"/><circle cx="510" cy="192" r="20" fill="#0B1220"/><text x="510" y="190" text-anchor="middle" font-size="14" font-weight="700" fill="#F8FAFC">78%</text><text x="510" y="206" text-anchor="middle" font-size="9" fill="#94A3B8">Python</text>
+  </a>
+  <a href="https://github.com/SurajRawani1919/Agentic-HR-Chatbot" target="_blank">
+    <rect x="612" y="84" width="560" height="200" rx="16" fill="#0B1220" stroke="#1E293B"/>
+    <text x="634" y="112" font-size="11" fill="#64748B">SurajRawani1919/Agentic-HR-Chatbot</text>
+    <text x="634" y="142" font-size="24" font-weight="700" fill="#F8FAFC">Agentic HR_</text>
+    <rect x="1102" y="102" width="48" height="48" rx="12" fill="#A78BFA" opacity="0.18" stroke="#A78BFA"/>
+    <text x="1126" y="132" text-anchor="middle" font-size="14" font-weight="700" fill="#A78BFA">HR</text>
+    <text x="634" y="170" font-size="13" fill="#94A3B8">Agentic HR chatbot for employee queries and workflows</text>
+    <rect x="634" y="188" width="61.2" height="22" rx="11" fill="#1E1B4B" stroke="#4C1D95"/><text x="664.6" y="203" text-anchor="middle" font-size="11" fill="#C4B5FD">Python</text><rect x="703.2" y="188" width="52" height="22" rx="11" fill="#1E1B4B" stroke="#4C1D95"/><text x="729.2" y="203" text-anchor="middle" font-size="11" fill="#C4B5FD">LLM</text><rect x="763.2" y="188" width="61.2" height="22" rx="11" fill="#1E1B4B" stroke="#4C1D95"/><text x="793.8000000000001" y="203" text-anchor="middle" font-size="11" fill="#C4B5FD">Agents</text>
+    <text x="634" y="262" font-size="12" fill="#64748B">★ 0   updated Sep 2025</text>
+    <circle cx="962" cy="199" r="4" fill="#3572A5"/><text x="974" y="202" font-size="12" fill="#94A3B8">Python 100%</text>
+    <circle cx="1094" cy="192" r="34" fill="none" stroke="#3572A5" stroke-width="10" stroke-dasharray="213.62830044410595 0" stroke-dashoffset="0" transform="rotate(-90 1094 192)"/><circle cx="1094" cy="192" r="20" fill="#0B1220"/><text x="1094" y="190" text-anchor="middle" font-size="14" font-weight="700" fill="#F8FAFC">100%</text><text x="1094" y="206" text-anchor="middle" font-size="9" fill="#94A3B8">Python</text>
+  </a>
+  <a href="https://github.com/SurajRawani1919/AI-Powered-Document-Analyzer" target="_blank">
+    <rect x="28" y="308" width="560" height="200" rx="16" fill="#0B1220" stroke="#1E293B"/>
+    <text x="50" y="336" font-size="11" fill="#64748B">SurajRawani1919/AI-Powered-Document-Analyzer</text>
+    <text x="50" y="366" font-size="24" font-weight="700" fill="#F8FAFC">Doc Analyzer_</text>
+    <rect x="518" y="326" width="48" height="48" rx="12" fill="#10B981" opacity="0.18" stroke="#10B981"/>
+    <text x="542" y="356" text-anchor="middle" font-size="14" font-weight="700" fill="#10B981">DA</text>
+    <text x="50" y="394" font-size="13" fill="#94A3B8">AI document analyzer for extraction and insights</text>
+    <rect x="50" y="412" width="61.2" height="22" rx="11" fill="#1E1B4B" stroke="#4C1D95"/><text x="80.6" y="427" text-anchor="middle" font-size="11" fill="#C4B5FD">Python</text><rect x="119.2" y="412" width="52" height="22" rx="11" fill="#1E1B4B" stroke="#4C1D95"/><text x="145.2" y="427" text-anchor="middle" font-size="11" fill="#C4B5FD">NLP</text><rect x="179.2" y="412" width="52" height="22" rx="11" fill="#1E1B4B" stroke="#4C1D95"/><text x="205.2" y="427" text-anchor="middle" font-size="11" fill="#C4B5FD">LLM</text>
+    <text x="50" y="486" font-size="12" fill="#64748B">★ 0   updated Sep 2025</text>
+    <circle cx="378" cy="423" r="4" fill="#3572A5"/><text x="390" y="426" font-size="12" fill="#94A3B8">Python 86%</text><circle cx="378" cy="441" r="4" fill="#083FA1"/><text x="390" y="444" font-size="12" fill="#94A3B8">Markdown 14%</text>
+    <circle cx="510" cy="416" r="34" fill="none" stroke="#3572A5" stroke-width="10" stroke-dasharray="183.7203383819311 29.907962062174846" stroke-dashoffset="0" transform="rotate(-90 510 416)"/><circle cx="510" cy="416" r="34" fill="none" stroke="#083FA1" stroke-width="10" stroke-dasharray="29.907962062174835 183.7203383819311" stroke-dashoffset="-183.7203383819311" transform="rotate(-90 510 416)"/><circle cx="510" cy="416" r="20" fill="#0B1220"/><text x="510" y="414" text-anchor="middle" font-size="14" font-weight="700" fill="#F8FAFC">86%</text><text x="510" y="430" text-anchor="middle" font-size="9" fill="#94A3B8">Python</text>
+  </a>
+  <a href="https://github.com/SurajRawani1919/Blog-Generation-LLM-App" target="_blank">
+    <rect x="612" y="308" width="560" height="200" rx="16" fill="#0B1220" stroke="#1E293B"/>
+    <text x="634" y="336" font-size="11" fill="#64748B">SurajRawani1919/Blog-Generation-LLM-App</text>
+    <text x="634" y="366" font-size="24" font-weight="700" fill="#F8FAFC">Blog LLM_</text>
+    <rect x="1102" y="326" width="48" height="48" rx="12" fill="#F59E0B" opacity="0.18" stroke="#F59E0B"/>
+    <text x="1126" y="356" text-anchor="middle" font-size="14" font-weight="700" fill="#F59E0B">BL</text>
+    <text x="634" y="394" font-size="13" fill="#94A3B8">LLM app that generates blog content from prompts</text>
+    <rect x="634" y="412" width="61.2" height="22" rx="11" fill="#1E1B4B" stroke="#4C1D95"/><text x="664.6" y="427" text-anchor="middle" font-size="11" fill="#C4B5FD">Python</text><rect x="703.2" y="412" width="52" height="22" rx="11" fill="#1E1B4B" stroke="#4C1D95"/><text x="729.2" y="427" text-anchor="middle" font-size="11" fill="#C4B5FD">LLM</text><rect x="763.2" y="412" width="52" height="22" rx="11" fill="#1E1B4B" stroke="#4C1D95"/><text x="789.2" y="427" text-anchor="middle" font-size="11" fill="#C4B5FD">NLP</text>
+    <text x="634" y="486" font-size="12" fill="#64748B">★ 0   updated Jul 2025</text>
+    <circle cx="962" cy="423" r="4" fill="#3572A5"/><text x="974" y="426" font-size="12" fill="#94A3B8">Python 92%</text><circle cx="962" cy="441" r="4" fill="#E34C26"/><text x="974" y="444" font-size="12" fill="#94A3B8">HTML 8%</text>
+    <circle cx="1094" cy="416" r="34" fill="none" stroke="#3572A5" stroke-width="10" stroke-dasharray="196.53803640857748 17.090264035528463" stroke-dashoffset="0" transform="rotate(-90 1094 416)"/><circle cx="1094" cy="416" r="34" fill="none" stroke="#E34C26" stroke-width="10" stroke-dasharray="17.090264035528477 196.53803640857745" stroke-dashoffset="-196.53803640857748" transform="rotate(-90 1094 416)"/><circle cx="1094" cy="416" r="20" fill="#0B1220"/><text x="1094" y="414" text-anchor="middle" font-size="14" font-weight="700" fill="#F8FAFC">92%</text><text x="1094" y="430" text-anchor="middle" font-size="9" fill="#94A3B8">Python</text>
+  </a>
+  <a href="https://github.com/SurajRawani1919/RoadAI-Detection-System" target="_blank">
+    <rect x="28" y="532" width="560" height="200" rx="16" fill="#0B1220" stroke="#1E293B"/>
+    <text x="50" y="560" font-size="11" fill="#64748B">SurajRawani1919/RoadAI-Detection-System</text>
+    <text x="50" y="590" font-size="24" font-weight="700" fill="#F8FAFC">RoadAI_</text>
+    <rect x="518" y="550" width="48" height="48" rx="12" fill="#EF4444" opacity="0.18" stroke="#EF4444"/>
+    <text x="542" y="580" text-anchor="middle" font-size="14" font-weight="700" fill="#EF4444">RA</text>
+    <text x="50" y="618" font-size="13" fill="#94A3B8">Computer vision system for road hazard detection</text>
+    <rect x="50" y="636" width="61.2" height="22" rx="11" fill="#1E1B4B" stroke="#4C1D95"/><text x="80.6" y="651" text-anchor="middle" font-size="11" fill="#C4B5FD">Python</text><rect x="119.2" y="636" width="52" height="22" rx="11" fill="#1E1B4B" stroke="#4C1D95"/><text x="145.2" y="651" text-anchor="middle" font-size="11" fill="#C4B5FD">CV</text><rect x="179.2" y="636" width="82.8" height="22" rx="11" fill="#1E1B4B" stroke="#4C1D95"/><text x="220.6" y="651" text-anchor="middle" font-size="11" fill="#C4B5FD">MediaPipe</text>
+    <text x="50" y="710" font-size="12" fill="#64748B">★ 0   updated Nov 2025</text>
+    <circle cx="378" cy="647" r="4" fill="#3572A5"/><text x="390" y="650" font-size="12" fill="#94A3B8">Python 81%</text><circle cx="378" cy="665" r="4" fill="#DA5B0B"/><text x="390" y="668" font-size="12" fill="#94A3B8">Jupyter Notebook 19%</text>
+    <circle cx="510" cy="640" r="34" fill="none" stroke="#3572A5" stroke-width="10" stroke-dasharray="173.03892335972583 40.58937708438012" stroke-dashoffset="0" transform="rotate(-90 510 640)"/><circle cx="510" cy="640" r="34" fill="none" stroke="#DA5B0B" stroke-width="10" stroke-dasharray="40.58937708438013 173.0389233597258" stroke-dashoffset="-173.03892335972583" transform="rotate(-90 510 640)"/><circle cx="510" cy="640" r="20" fill="#0B1220"/><text x="510" y="638" text-anchor="middle" font-size="14" font-weight="700" fill="#F8FAFC">81%</text><text x="510" y="654" text-anchor="middle" font-size="9" fill="#94A3B8">Python</text>
+  </a>
+  <a href="https://github.com/SurajRawani1919/ATS-Project" target="_blank">
+    <rect x="612" y="532" width="560" height="200" rx="16" fill="#0B1220" stroke="#1E293B"/>
+    <text x="634" y="560" font-size="11" fill="#64748B">SurajRawani1919/ATS-Project</text>
+    <text x="634" y="590" font-size="24" font-weight="700" fill="#F8FAFC">ATS Project_</text>
+    <rect x="1102" y="550" width="48" height="48" rx="12" fill="#38BDF8" opacity="0.18" stroke="#38BDF8"/>
+    <text x="1126" y="580" text-anchor="middle" font-size="14" font-weight="700" fill="#38BDF8">ATS</text>
+    <text x="634" y="618" font-size="13" fill="#94A3B8">Applicant tracking insights with ML and NLP scoring</text>
+    <rect x="634" y="636" width="61.2" height="22" rx="11" fill="#1E1B4B" stroke="#4C1D95"/><text x="664.6" y="651" text-anchor="middle" font-size="11" fill="#C4B5FD">Python</text><rect x="703.2" y="636" width="52" height="22" rx="11" fill="#1E1B4B" stroke="#4C1D95"/><text x="729.2" y="651" text-anchor="middle" font-size="11" fill="#C4B5FD">NLP</text><rect x="763.2" y="636" width="52" height="22" rx="11" fill="#1E1B4B" stroke="#4C1D95"/><text x="789.2" y="651" text-anchor="middle" font-size="11" fill="#C4B5FD">ML</text>
+    <text x="634" y="710" font-size="12" fill="#64748B">★ 0   updated Apr 2025</text>
+    <circle cx="962" cy="647" r="4" fill="#3572A5"/><text x="974" y="650" font-size="12" fill="#94A3B8">Python 100%</text>
+    <circle cx="1094" cy="640" r="34" fill="none" stroke="#3572A5" stroke-width="10" stroke-dasharray="213.62830044410595 0" stroke-dashoffset="0" transform="rotate(-90 1094 640)"/><circle cx="1094" cy="640" r="20" fill="#0B1220"/><text x="1094" y="638" text-anchor="middle" font-size="14" font-weight="700" fill="#F8FAFC">100%</text><text x="1094" y="654" text-anchor="middle" font-size="9" fill="#94A3B8">Python</text>
+  </a>
+</svg>
