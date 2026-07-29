@@ -68,6 +68,10 @@
   <img src="https://img.shields.io/badge/Email-0A101F?style=for-the-badge&logo=gmail&logoColor=10B981&labelColor=0A101F" alt="Email" />
 </a>
 &nbsp;&nbsp;
+<a href="https://wa.me/917061205601">
+  <img src="https://img.shields.io/badge/WhatsApp-0A101F?style=for-the-badge&logo=whatsapp&logoColor=25D366&labelColor=0A101F" alt="WhatsApp" />
+</a>
+&nbsp;&nbsp;
 </div>
 
 <!-- ===== END SOCIAL BADGES ===== -->
