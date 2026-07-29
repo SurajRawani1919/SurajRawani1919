@@ -6,22 +6,25 @@ const photoUri = `data:image/jpeg;base64,${photo}`;
 function make(theme) {
   const dark = theme === "dark";
   const c = {
-    pageBg: dark ? "#070B14" : "#F8FAFC",
-    cardBg: dark ? "#0B1220" : "#FFFFFF",
-    headerBg: dark ? "#111827" : "#F1F5F9",
-    border: dark ? "#1E293B" : "#E2E8F0",
-    muted: dark ? "#64748B" : "#94A3B8",
-    soft: dark ? "#475569" : "#94A3B8",
-    title: dark ? "#22D3EE" : "#0891B2",
+    page: dark ? "#070B14" : "#F8FAFC",
+    win: dark ? "#0B1220" : "#FFFFFF",
+    header: dark ? "#111827" : "#F1F5F9",
+    border: dark ? "#334155" : "#CBD5E1",
+    titleBarText: dark ? "#94A3B8" : "#475569",
+    soft: dark ? "#64748B" : "#94A3B8",
+    accent: dark ? "#22D3EE" : "#0891B2",
+    accentStroke: dark ? "#22D3EE" : "#06B6D4",
     text: dark ? "#E2E8F0" : "#0F172A",
     textStrong: dark ? "#F8FAFC" : "#0F172A",
-    email: dark ? "#38BDF8" : "#1D4ED8",
-    live: "#EF4444",
-    panelBg: dark ? "#0F172A" : "#F8FAFC",
-    panelBorder: dark ? "#334155" : "#CBD5E1",
-    overlay: dark ? "rgba(11,18,32,0.82)" : "rgba(255,255,255,0.88)",
-    footer: dark ? "#64748B" : "#64748B",
-    dots: dark ? "rgba(248,250,252,0.18)" : "rgba(15,23,42,0.25)",
+    emailBg: dark ? "#0C4A6E" : "#DBEAFE",
+    emailFg: dark ? "#7DD3FC" : "#1D4ED8",
+    live: dark ? "#F87171" : "#DC2626",
+    dots: dark ? "rgba(148,163,184,0.55)" : "rgba(8,145,178,0.45)",
+    photoBg: dark ? "#0F172A" : "#F8FAFC",
+    footer: dark ? "#94A3B8" : "#475569",
+    footerBg: dark ? "#0F172A" : "#E0F2FE",
+    panelGradTop: dark ? "#0B1220" : "#FFFFFF",
+    panelGradBot: dark ? "#070B14" : "#F8FAFC",
   };
 
   const rows = [
@@ -44,71 +47,104 @@ function make(theme) {
     ["Grid.LinkedIn", "suraj-kumar-rawani-0483b7298"],
     ["Grid.GitHub", "@SurajRawani1919"],
     ["Grid.Instagram", "@suraj_singh1919"],
+    ["Grid.WhatsApp", "+91 7061205601"],
   ];
 
-  // Fill the full SYSTEM.INFO column (~accent bar width: 660px ≈ 84 monospace chars at 13px)
-  const LINE_CHARS = 84;
-
-  function row(y, label, value) {
+  function dottedLine(label, value) {
     const left = `${label} `;
     const right = ` ${value}`;
-    const dots = ".".repeat(Math.max(3, LINE_CHARS - left.length - right.length));
+    const dots = ".".repeat(Math.max(8, 72 - left.length - right.length));
     return (
-      `<text x="460" y="${y}" font-size="13" xml:space="preserve">` +
-      `<tspan fill="${c.title}">${left}</tspan>` +
+      `<tspan fill="${c.accent}">${left}</tspan>` +
       `<tspan fill="${c.dots}">${dots}</tspan>` +
-      `<tspan fill="${c.text}" font-weight="600">${right}</tspan></text>`
+      `<tspan fill="${c.text}" font-weight="600">${right}</tspan>`
     );
   }
 
-  let y = 155;
+  let y = 148;
   let body = "";
   for (const [l, v] of rows) {
-    body += row(y, l, v) + "\n";
-    y += 22;
-  }
-  const contactLabel = "- Contact ";
-  const contactDashes = "-".repeat(Math.max(3, LINE_CHARS - contactLabel.length));
-  body += `<text x="460" y="${y}" font-size="12" fill="${c.soft}" xml:space="preserve">${contactLabel}${contactDashes}</text>\n`;
-  y += 24;
-  for (const [l, v] of contacts) {
-    body += row(y, l, v) + "\n";
+    body += `<text x="470" y="${y}" font-size="13" textLength="655" lengthAdjust="spacingAndGlyphs" xml:space="preserve">${dottedLine(l, v)}</text>\n`;
     y += 20;
   }
+  body += `<text x="470" y="${y}" font-size="13" textLength="655" lengthAdjust="spacingAndGlyphs" xml:space="preserve"><tspan fill="${c.soft}">- Contact </tspan><tspan fill="${c.dots}">${"-".repeat(58)}</tspan></text>\n`;
+  y += 20;
+  for (const [l, v] of contacts) {
+    body += `<text x="470" y="${y}" font-size="13" textLength="655" lengthAdjust="spacingAndGlyphs" xml:space="preserve">${dottedLine(l, v)}</text>\n`;
+    y += 20;
+  }
+
+  // Corner brackets for photo frame
+  const bx = 36, by = 84, bw = 400, bh = 492, bl = 28;
+  const brackets = `
+    <path d="M${bx} ${by + bl} V${by} H${bx + bl}" fill="none" stroke="${c.accentStroke}" stroke-width="2.5"/>
+    <path d="M${bx + bw - bl} ${by} H${bx + bw} V${by + bl}" fill="none" stroke="${c.accentStroke}" stroke-width="2.5"/>
+    <path d="M${bx} ${by + bh - bl} V${by + bh} H${bx + bl}" fill="none" stroke="${c.accentStroke}" stroke-width="2.5"/>
+    <path d="M${bx + bw - bl} ${by + bh} H${bx + bw} V${by + bh - bl}" fill="none" stroke="${c.accentStroke}" stroke-width="2.5"/>
+  `;
 
   return `<?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1180" height="610" viewBox="0 0 1180 610" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" role="img" aria-label="Suraj Kumar Rawani - profile.sh --live">
   <defs>
-    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#22D3EE"/>
-      <stop offset="50%" stop-color="#A78BFA"/>
-      <stop offset="100%" stop-color="#10B981"/>
+    <linearGradient id="panelGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="${c.panelGradTop}"/>
+      <stop offset="100%" stop-color="${c.panelGradBot}"/>
     </linearGradient>
-    <clipPath id="photoClip"><rect x="48" y="88" width="360" height="460" rx="16"/></clipPath>
-    <filter id="txtGlow" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="1.2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <clipPath id="winClip"><rect x="2" y="2" width="1176" height="606" rx="18"/></clipPath>
+    <clipPath id="photoClip"><rect x="44" y="92" width="384" height="476" rx="8"/></clipPath>
+    <filter id="txtGlow" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="1.1" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="glow3"><feGaussianBlur stdDeviation="2.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <mask id="photoReveal" maskUnits="userSpaceOnUse" x="44" y="92" width="384" height="476">
+      <rect x="44" y="92" width="384" height="476" fill="#000"/>
+      ${Array.from({ length: 28 }, (_, i) => {
+        const h = 476 / 28;
+        const y = 92 + i * h;
+        const start = (0.04 + i * 0.025).toFixed(3);
+        const mid = (0.12 + i * 0.025).toFixed(3);
+        return `<rect x="44" y="${y.toFixed(2)}" width="384" height="${(h + 0.8).toFixed(2)}" fill="#fff" opacity="0">
+        <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;${start};${mid};0.62;0.78;1" dur="5.5s" repeatCount="indefinite" calcMode="spline" keySplines=".4 0 .2 1;.4 0 .2 1;.4 0 .2 1;.4 0 .2 1;.4 0 .2 1"/>
+      </rect>`;
+      }).join("\n      ")}
+    </mask>
   </defs>
-  <rect width="1180" height="610" fill="${c.pageBg}"/>
-  <rect x="16" y="16" width="1148" height="578" rx="16" fill="${c.cardBg}" stroke="${c.border}" stroke-width="1.5"/>
-  <rect x="16" y="16" width="1148" height="36" rx="16" fill="${c.headerBg}"/>
-  <rect x="16" y="34" width="1148" height="18" fill="${c.headerBg}"/>
-  <circle cx="42" cy="34" r="6" fill="#EF4444"/>
-  <circle cx="64" cy="34" r="6" fill="#F59E0B"/>
-  <circle cx="86" cy="34" r="6" fill="#10B981"/>
-  <text x="590" y="39" text-anchor="middle" font-size="12" fill="${c.muted}">rawanisuraj1919@gmail.com - % ./profile.sh --live</text>
-  <text x="48" y="74" font-size="10" letter-spacing="3" fill="${c.soft}">VISUAL.MAP</text>
-  <rect x="48" y="88" width="360" height="460" rx="16" fill="${c.panelBg}" stroke="${c.panelBorder}"/>
-  <g clip-path="url(#photoClip)">
-    <image xlink:href="${photoUri}" x="48" y="88" width="360" height="460" preserveAspectRatio="xMidYMid slice"/>
-    <rect x="48" y="470" width="360" height="78" fill="${c.overlay}"/>
-    <text x="228" y="502" text-anchor="middle" font-size="18" font-weight="700" fill="${c.textStrong}">Suraj Kumar Rawani</text>
-    <text x="228" y="526" text-anchor="middle" font-size="12" fill="${c.title}">AI/ML Engineer</text>
-  </g>
-  <text x="460" y="74" font-size="13" letter-spacing="2" fill="${c.title}" filter="url(#txtGlow)">SYSTEM.INFO</text>
-  <text x="575" y="74" font-size="12" font-weight="700" fill="${c.live}"><tspan>&#9679;</tspan> LIVE<animate attributeName="opacity" values="1;0.35;1" dur="1.6s" repeatCount="indefinite"/></text>
-  <text x="460" y="108" font-size="14" font-weight="700" fill="${c.email}">rawanisuraj1919@gmail.com</text>
-  <rect x="460" y="120" width="660" height="2" fill="url(#accent)" opacity="0.55"/>
+
+  <!-- outer page -->
+  <rect width="1180" height="610" fill="${c.page}"/>
+
+  <!-- ONE terminal frame -->
+  <rect x="2" y="2" width="1176" height="606" rx="18" fill="${c.win}" stroke="${c.border}" stroke-width="1.5"/>
+  <g clip-path="url(#winClip)">
+    <rect x="2" y="2" width="1176" height="606" fill="url(#panelGrad)"/>
+
+    <!-- title bar -->
+    <rect x="2" y="2" width="1176" height="46" fill="${c.header}"/>
+    <line x1="2" y1="48" x2="1178" y2="48" stroke="rgba(148,163,184,0.25)"/>
+    <circle cx="28" cy="25" r="6" fill="#EF4444"/>
+    <circle cx="50" cy="25" r="6" fill="#F59E0B"/>
+    <circle cx="72" cy="25" r="6" fill="#10B981"/>
+    <text x="590" y="29" text-anchor="middle" font-size="12" fill="${c.titleBarText}">rawanisuraj1919@gmail.com - % ./profile.sh --live</text>
+
+    <!-- LEFT: VISUAL.MAP -->
+    <text x="38" y="74" font-size="10" letter-spacing="3" fill="${c.soft}">VISUAL.MAP</text>
+    <rect x="36" y="84" width="400" height="492" rx="10" fill="none" stroke="${c.accentStroke}" stroke-width="2" opacity="0.45" filter="url(#glow3)"/>
+    <rect x="36" y="84" width="400" height="492" rx="10" fill="${c.photoBg}" stroke="${c.accentStroke}" stroke-opacity="0.4"/>
+    <!-- Photo reveal: strips fade in then out (goes and comes), like the reference -->
+    <g clip-path="url(#photoClip)">
+      <image xlink:href="${photoUri}" x="44" y="92" width="384" height="476" preserveAspectRatio="xMidYMid slice" mask="url(#photoReveal)"/>
+    </g>
+    ${brackets}
+
+    <!-- RIGHT: SYSTEM.INFO -->
+    <text x="470" y="74" font-size="13" letter-spacing="2" fill="${c.accent}" filter="url(#txtGlow)">SYSTEM.INFO</text>
+    <text x="1125" y="74" text-anchor="end" font-size="12" fill="${c.live}" font-weight="700"><tspan>&#9679;</tspan> LIVE<animate attributeName="opacity" values="1;0.35;1" dur="1.6s" repeatCount="indefinite"/></text>
+
+    <rect x="470" y="90" width="280" height="22" rx="4" fill="${c.emailBg}"/>
+    <text x="479" y="106" font-size="14" font-weight="700" fill="${c.emailFg}">rawanisuraj1919@gmail.com</text>
+
 ${body}
-  <text x="590" y="575" text-anchor="middle" font-size="11" fill="${c.footer}">&#9679; More about me &amp; projects below in README &#9679;</text>
+    <rect x="470" y="560" width="655" height="24" rx="4" fill="${c.footerBg}"/>
+    <text x="480" y="577" font-size="13" fill="${c.footer}">&#9654; More about me &amp; projects below in README &#9660;</text>
+  </g>
 </svg>
 `;
 }
